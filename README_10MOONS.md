@@ -1,7 +1,7 @@
 # 人脸识别考勤demo
 
 >工程概述
-  基于ArcFaceDemo修改的人脸识别考勤系统，appid、sdkkey和lib已申请并配置好，关于ArcFaceDemo更多细节，详见《README.md》。
+  基于ArcFaceDemo修改的人脸识别考勤系统，appid、sdkkey和lib已申请并配置好，关于ArcFaceDemo更多细节，详见《README_ArcFaceDemo.md》。
   本工程作为人脸识别应用于实际的范例，更多详细介绍参见《阅人脸识别考勤系统介绍.pdf》
 
 >工程如何使用?
