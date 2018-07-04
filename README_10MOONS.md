@@ -6,7 +6,7 @@
 
 >工程如何使用?
 1. 下载代码:
-    git clone https://github.com/asdfqwrasdf/ArcFaceDemo.git 或者直接下载压缩包
+    git clone https://github.com/wangxcgg/FaceRecognition.git 或者直接下载压缩包
 
 2. Android Studio3.0 中直接打开或者导入Project,编译运行即可。
 
