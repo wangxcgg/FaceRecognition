@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!-- 删除对话框线性布局对于_id字段 -->
+
+    <LinearLayout
+        android:id="@+id/delete_linearLayout_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/insert_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_text_name"
+            android:textSize="20px" />
+
+        <EditText
+            android:id="@+id/delete_edit_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 确认插入按钮 -->
+
+    <Button
+        android:id="@+id/delete_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delete_linearLayout_name"
+        android:layout_marginTop="20px"
+        android:layout_alignParentLeft="true"
+        android:text="@string/delete_confirm" />
+
+    <!-- 取消插入按钮 -->
+
+    <Button
+        android:id="@+id/delete_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delete_linearLayout_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20px"
+        android:text="@string/delete_cancel" />
+
+</RelativeLayout>

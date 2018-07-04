@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="管理"
+            android:textSize="20px"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_importMemberNameList"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="导入人员名单"
+                android:textSize="16px"
+                />
+
+            <Button
+                android:id="@+id/btn_importMemberFaceImage"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginRight="50px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="批量导入头像"
+                android:textSize="16px"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="添加"
+                android:textSize="16px"
+                />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginRight="50px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="删除"
+                android:textSize="16px"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="更新图像数据"
+            android:textSize="20px"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cameraImage"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="摄像头"
+                android:textSize="16px"
+                />
+
+            <Button
+                android:id="@+id/btn_fileImage"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginRight="50px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="图像文件"
+                android:textSize="16px"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_member"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:scaleType="fitXY"
+            android:src="@drawable/xzpq"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="查询"
+            android:textSize="20px"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                android:text="姓名"
+                android:textSize="16px"/>
+
+            <EditText
+                android:id="@+id/editText_name"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginRight="50px"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textSize="16px"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                android:text="ID"
+                android:textSize="16px"/>
+
+            <EditText
+                android:id="@+id/editText_id"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:textSize="16px"
+                />
+
+            <CheckBox
+                android:id="@+id/check_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="状态"
+                android:textSize="16px"/>
+
+            <EditText
+                android:id="@+id/editText_status"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16px"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_time_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                android:text="起始日期"
+                android:textSize="16px"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_time_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/time_text_begin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="16px"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_time_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="结束日期"
+                android:textSize="16px"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout_time_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/time_text_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="16px"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_query"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50px"
+            android:gravity="center"
+            android:text="查询"
+            android:textSize="16px"
+            />
+    </LinearLayout>
+
+</LinearLayout>

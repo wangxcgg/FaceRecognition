@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">人脸识别考勤demo</string>
+    <string name="btn_insert">插入</string>
+    <string name="btn_delete">删除</string>
+    <string name="btn_update">修改</string>
+    <string name="btn_query">查询</string>
+    <string name="insert_text_name">姓名</string>
+    <string name="insert_text_age">年龄</string>
+    <string name="insert_text_sex">性别</string>
+    <string name="insert_text_race">人种</string>
+    <string name="insert_confirm">确认插入</string>
+    <string name="insert_cancel">取消插入</string>
+    <string name="delete_text_id">ID</string>
+    <string name="delete_text_name">姓名</string>
+    <string name="delete_confirm">确定删除</string>
+    <string name="delete_cancel">取消删除</string>
+    <string name="update_text_id">ID</string>
+    <string name="update_text_name">姓名</string>
+    <string name="update_text_age">年龄</string>
+    <string name="update_text_sex">性别</string>
+    <string name="update_text_race">人种</string>
+    <string name="update_confirm">确认更新</string>
+    <string name="update_cancel">取消更新</string>
+
+</resources>

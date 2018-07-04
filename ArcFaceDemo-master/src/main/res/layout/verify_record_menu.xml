@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:text="考勤规则设置"
+            android:textSize="20px"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="考勤时间"
+                android:textSize="16px"
+                />
+
+            <LinearLayout
+                android:id="@+id/linearLayout_checkInTime"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView_checkInTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:gravity="center"
+                    android:text="09:00-17:30 9小时"
+                    android:textSize="16px"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_checkInWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="考勤日期"
+                android:textSize="16px"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView_checkInWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:gravity="center"
+                    android:text="每周一、二、三、四、五"
+                    android:textSize="16px"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_allRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="全部记录"
+                android:textSize="16px"
+                />
+
+            <Button
+                android:id="@+id/btn_ruleRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginRight="50px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="规则内打卡"
+                android:textSize="16px"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_exportCurrentRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginLeft="50px"
+                android:gravity="center"
+                android:text="导出当前打卡记录"
+                android:textSize="16px"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="20px"
+            android:text="导出当月的打卡记录"
+            android:textSize="20px"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_exportTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginLeft="50px"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="打卡日期"
+                android:textSize="16px"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView_exportTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:gravity="center"
+                    android:text="2018-05-01到2018-05-31"
+                    android:textSize="16px"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:scaleType="center"
+                    android:src="@drawable/arrow"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_exportDateRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:layout_marginLeft="50px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="导出日期打卡记录"
+            android:textSize="16px"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
