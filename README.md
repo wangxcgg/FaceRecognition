@@ -15,9 +15,11 @@
 > 点击第三个按钮，涵盖了人脸识别考勤系统的所有功能。
 
 > demo中两个数据库的使用?
+
 　1. 用户名单数据库:
      FaceListSQLiteHelper类封装了用户名单数据库操作细节，Application.getFaceListDB()获取程序初始化时new的FaceListSQLiteHelper实例，
      通过实例调用用户名单数据库的操作方法。
+     
   2. 识别记录是数据库：
      VerifyRecordSQLiteHelper类封装了识别记录数据库，Application.getVerifyRecordDB()获取程序初始化时new的VerifyRecordSQLiteHelper实例，
      通过实例调用识别记录数据库的操作方法。
